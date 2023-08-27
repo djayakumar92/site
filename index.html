@@ -3,7 +3,7 @@
 
 <head>
     <title>Demo</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.syncfusion.com/ej2/ej2-base/styles/material.css" rel="stylesheet" type="text/css" />
     <link href="https://cdn.syncfusion.com/ej2/ej2-popups/styles/material.css" rel="stylesheet" type="text/css" />
     <!-- Essential JS 2 material theme -->
@@ -15,15 +15,23 @@
 
 <body>
     <script id="templateImg" type="text/x-template">
-        
-            <img src="images/${ID}.jpg" alt="${ID}" />
-       
+        <div class="image">
+            <img src="images/${Name}.jpg" alt="${Name}" />
+        </div>
     </script>
-    <!-- Add the HTML <div> element for grid  -->
-    <div id="Grid"></div>
-    <script src="index.js" type="text/javascript"></script>
-    
+    <div style="height: 100vh; width: 100vw;" >
+        <div id="Grid"></div>
    
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+
+    <style>
+        .image img {
+            max-width: 100%;
+            height: auto;
+            padding: 4px;
+        }
+    </style>
 </body>
 
 </html>
